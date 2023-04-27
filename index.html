@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>MyAnimeList | Home</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif;
+      }
+
+      .main-container {
+        width: 100%;
+        height: 100vh;
+      }
+      .container-header {
+        width: 100%;
+        height: 60px;
+        background-color: maroon;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+      }
+      .nav a {
+        margin-right: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      .box-session {
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .box-session .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid white;
+        align-items: center;
+        color: white;
+        background-color: rgb(59, 40, 165);
+      }
+      .box-session .settings {
+        width: 150px;
+        height: 40px;
+      }
+      .options {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        outline: none;
+        border: 1px solid white;
+      }
+      .options option {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="container-header">
+        <nav class="nav">
+          <a href="">Home</a>
+          <a href="">Añadir Anime</a>
+          <a href="">Editar Anime</a>
+          <a href="">Eliminar Anime</a>
+        </nav>
+
+        <div class="box-session">
+          <div class="avatar">
+            <span class="current_user">CR</span>
+          </div>
+          <div class="settings">
+            <select name="" id="" class="options">
+              <option selected disabled>-- Settings --</option>
+              <option value="">Editar perfil</option>
+              <option value="">Cerrar sesion</option>
+            </select>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

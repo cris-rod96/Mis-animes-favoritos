@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Login | AnimesList</title>
+  </head>
+  <body class="body">
+    <div class="container login">
+      <div class="box-form">
+        <form action="" class="form" id="form">
+          <div class="form-group">
+            <label for="" class="form-group__label">Username</label>
+            <input type="text" class="form-group__input" id="username" />
+            <span class="field-required hide">* Campo obligatorio</span>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="form-group__label">Password</label>
+            <input type="password" class="form-group__input" id="password" />
+            <span class="field-required hide">* Campo obligatorio</span>
+          </div>
+
+          <div class="form-buttons">
+            <button class="btn btn-primary" id="btnLogin">
+              Iniciar sesión
+            </button>
+          </div>
+
+          <div class="form-links">
+            <div class="message">
+              <ion-icon name="information-circle"></ion-icon>
+              <span>
+                Si aún no tienes una cuenta, <a href="#">registrate</a> para
+                poder accceder a todas las funcionalidades de nuestra
+                plataforma.
+              </span>
+            </div>
+
+            <div class="message">
+              <ion-icon name="alert-circle"></ion-icon>
+              <span>
+                ¿Olvidaste tu contraseña?, recuperala <a href="#">aquí</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="form-credits">
+            <p>Encuentranos en</p>
+            <div class="socials">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <p>O contactanos en:</p>
+            <div class="contact-us">
+              <ion-icon name="mail"></ion-icon>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+
+            <p class="developer">Desarrolado por Cristhian Rodríguez</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

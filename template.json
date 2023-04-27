@@ -1,0 +1,13 @@
+{
+    "data":{
+        "users": [
+        ],
+
+        "log": {
+            "status": false,
+            "user": null,
+            "date": null
+        }
+
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Register | AnimeList</title>
+  </head>
+  <body>
+    <div class="container register">
+      <div class="content">
+        <div class="box-form">
+          <form action="" class="form" id="form-register">
+            <div class="form-group group-double">
+              <div class="form-group">
+                <label for="" class="form-group__label">Name</label>
+                <input type="text" class="form-group__input" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-group__label">LastName</label>
+                <input type="text" class="form-group__input" id="lastName" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="form-group__label">Email</label>
+              <input
+                type="email"
+                name=""
+                id="email"
+                class="form-group__input"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="" class="form-group__label">Age</label>
+              <input type="number" name="" id="age" class="form-group__input" />
+            </div>
+
+            <div class="form-group">
+              <label for="" class="form-group__label">Sex</label>
+              <select name="" id="sex" class="form-group__select">
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Unknown">Prefiero no decirlo</option>
+              </select>
+            </div>
+
+            <div class="form-group group-double">
+              <div class="form-group">
+                <label for="" class="form-group__label">Username</label>
+                <input type="text" class="form-group__input" id="username" />
+              </div>
+
+              <div class="form-group">
+                <label for="" class="form-group__label">Password</label>
+                <input
+                  type="password"
+                  class="form-group__input"
+                  id="password"
+                />
+              </div>
+            </div>
+
+            <div class="form-buttons">
+              <button class="btn btn-primary" id="btnRegistrar">
+                Registrarme
+              </button>
+            </div>
+
+            <div class="form-links">
+              <a href="#" class="link">Ya tengo una cuenta. Ir al login.</a>
+            </div>
+
+            <div class="form-credits">
+              <p class="developer">Desarrolado por Cristhian Rodríguez</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="box-verificaciones">
+          <h3>Verificación de información</h3>
+          <div class="verificaciones">
+            <div class="verificacion" data-box="email-no-disponible">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                El email ingresado no se encuentra disponible. Ingrese otra
+                dirección de correo.
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="server-incorrecto">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                EL sevidor ingresado no es correcto, solo se permiten
+                direcciones con: hotmail.com, outlook.com, gmail.com.
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="arroba-null">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                La dirección ingresada de email no es correcta. Debe contener al
+                menos un "@".
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="formato-incorrecto">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                Antes y Después del "@" debe existir texto que indique el
+                usuario y el servidor de correo.
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="menor-edad">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                Los usuarios no pueden ser menores de edad, debido a que existen
+                animes con contenido explícito.
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="edad-excedida">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                Los usuarios no pueden ser personas mayores a 50 años. Viejo
+                rabo verde busque oficio.
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="usuario-invalido">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>
+                El username no se encuentra disponible intenta con otro nombre
+                de usuario.
+              </p>
+            </div>
+
+            <div class="verificacion" data-box="password-invalida">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>La contraseña debe tener al menos 6 caracteres.</p>
+            </div>
+
+            <div class="verificacion" data-box="campos-vacios">
+              <div class="icono color-error">
+                <ion-icon name="close-circle"></ion-icon>
+              </div>
+              <p>Todos los campos son necesarios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./assets/js/registrar.js"></script>
+  </body>
+</html>
