@@ -29,7 +29,7 @@ body{
 
 .box-form,.box-verificaciones{
     width: 100%;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0,0, .5);
     padding: 40px;
     border: 2px solid white;
     border-radius: 20px;
@@ -55,7 +55,7 @@ body{
     letter-spacing: 2px;
 }
 
-.form-group__input, .form-group__select{
+.form-group__input, .form-group__selectpINS{
     height: 45px;
     border: none;
     outline: none;
@@ -72,9 +72,10 @@ body{
 
 .form-group__select option{
     font-size: 14px;
-}
+}   
 .form-group__input:focus, .form-group__select:focus{
     border-color: maroon;
+    border-width: 10px;
 }
 
 
@@ -117,7 +118,7 @@ body{
     font-size: 25px;
     margin-right: 10px;
 }
-
+    
 .message span{
     font-size: 15px;
     font-weight: 500;
